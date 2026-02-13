@@ -27,7 +27,7 @@
 body {
     font-family: 'Cormorant Garamond', serif;
     background: var(--cream);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* PAGE WRAPPER */
@@ -45,9 +45,14 @@ body {
     padding: 40px 25px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* start at top */
     text-align: center;
+    overflow-y: auto;       /* allow vertical scrolling */
 }
+.page {
+    -webkit-overflow-scrolling: touch;
+}
+
 
 /* ================= PAGE 1 ================= */
 
